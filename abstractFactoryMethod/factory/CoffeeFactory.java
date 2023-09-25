@@ -1,10 +1,10 @@
 package abstractFactoryMethod.factory;
 
 import abstractFactoryMethod.coffee.MilkCoffee;
-import abstractFactoryMethod.coffee.TeaCoffee;
+import abstractFactoryMethod.coffee.Tea;
 
 public interface CoffeeFactory {
     MilkCoffee createMilkACoffee();
     MilkCoffee createMilkBCoffee();
-    TeaCoffee createTeaCoffee();
+    Tea createTea();
 }

@@ -2,7 +2,7 @@ package abstractFactoryMethod;
 
 
 import abstractFactoryMethod.coffee.MilkCoffee;
-import abstractFactoryMethod.coffee.TeaCoffee;
+import abstractFactoryMethod.coffee.Tea;
 import abstractFactoryMethod.factory.CoffeeFactory;
 import abstractFactoryMethod.factory.Impl.CoffeeFactoryImpl;
 
@@ -11,9 +11,9 @@ public class coffeeTest {
         CoffeeFactory cf = new CoffeeFactoryImpl();
         MilkCoffee milkACoffee = cf.createMilkACoffee();
         MilkCoffee milkBCoffee = cf.createMilkBCoffee();
-        TeaCoffee teaCoffee = cf.createTeaCoffee();
+        Tea tea = cf.createTea();
         milkACoffee.print();
         milkBCoffee.print();
-        teaCoffee.print();
+        tea.print();
     }
 }

@@ -2,9 +2,9 @@ package abstractFactoryMethod.factory.Impl;
 
 import abstractFactoryMethod.coffee.Impl.MilkCoffeeAImpl;
 import abstractFactoryMethod.coffee.Impl.MilkCoffeeBImpl;
-import abstractFactoryMethod.coffee.Impl.TeaCoffeeImpl;
+import abstractFactoryMethod.coffee.Impl.TeaImpl;
 import abstractFactoryMethod.coffee.MilkCoffee;
-import abstractFactoryMethod.coffee.TeaCoffee;
+import abstractFactoryMethod.coffee.Tea;
 import abstractFactoryMethod.factory.CoffeeFactory;
 
 public class CoffeeFactoryImpl implements CoffeeFactory {
@@ -19,7 +19,7 @@ public class CoffeeFactoryImpl implements CoffeeFactory {
     }
 
     @Override
-    public TeaCoffee createTeaCoffee() {
-        return new TeaCoffeeImpl();
+    public Tea createTea() {
+        return new TeaImpl();
     }
 }

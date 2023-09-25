@@ -1,5 +1,5 @@
 package abstractFactoryMethod.coffee;
 
-public interface TeaCoffee {
+public interface Tea {
     void print();
 }
