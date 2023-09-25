@@ -9,7 +9,7 @@ public class CoffeeFactory {
         Coffee coffeeResult = null;
         if("milkCoffee".equals(type)){
             coffeeResult = MilkCoffee.createMilkCoffee();
-        }else if("teaCoffee".equals(type)){
+        }else if("tea".equals(type)){
             coffeeResult = Tea.createTea();
         }
         return coffeeResult;
